@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preload" as="style" href="<%= data.cssPATH%>" onload="this.rel='stylesheet';this.onload=null;">
+    <noscript>
+      <link rel="stylesheet" href="<%= data.cssPATH%>">
+    </noscript>
+</head>
+<body>
+  <div class = "flex-container">Enter details
+    <div class="flex-item">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <div class="flex-item">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <div class="flex-item"><button type="button" onclick="submitForm()">Submit</button></div>
+    <div id="response"></div>
+  </div>
+</body>
+<script rel="preload" as="script" href="<%= data.jsPATH%>" onload="this.onload=null;this.rel='preload'"></script>
+<script src="<%= data.jsPATH%>"></script>
+</html>

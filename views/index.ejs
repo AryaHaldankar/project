@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "preload" href="<%= data.cssLoc%>" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="<%= data.cssLoc%>">
+    </noscript>
+    <title>WeatherApp</title>
+</head>
+<div id="nav" class="container"><div class="item"><h1 style="color:white;">Weather App...
+</h1>
+</div>
+<div class="item">Whats the weather in <input type="text" id="request" name="request">
+    <button class="change" style = "width:auto;margin-left:8px;" onclick="myFunction()">GIVE WEATHER</button></div>
+</div>
+</div>
+<div><br><br><br></div>
+
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+        <div class = "mini" id="answer">Weather icon of location will show up here ...</div></div>
+        <div class="grid-item"><div class = "mini" id="answerforecast">Detailed weather stats of the location will show up here ...</div></div>
+    </div>
+    <br>
+    <div id="about"><h2>About the app
+        <div>
+    <button class="change" onclick="signin()" style="display: <%= data.in %>;">SignUp</button>
+    <button class="change" onclick="login()" style="display: <%= data.in %>;">Login</button>
+    <button class="change" onclick="logout()" style="display: <%= data.out %>;">Logout</button>
+    </div>
+    </div>
+    <div class="grid-item">
+        </h2><div id="answerlike">WeatherAPI.com is a powerful fully managed free weather and geolocation API provider that provides extensive APIs that range from the weather forecast, historical weather, future weather, weather alerts, air quality data, IP lookup, and astronomy through to sports, time zone, and geolocation.We provide free API for different types of data.Real-time weather,
+Up to 14 day hourly and 15 min weather forecast,Historical hourly and 15 min weather forecast (from 1-Jan-2010 onwards),Future Weather (Upto 365 days ahead),Global Weather Alerts,Air Quality Data,Astronomy,Time Zone,IP Lookup,Sports API,Map API (Coming soon),Location data
+            </div>
+    </div>
+
+</body>
+<footer>
+    <div class="container">
+      <div class="item"><a href="">Contact Us!</a></div>
+      <div class="item"><a href="">FAQ'S</a></div>
+      <div class="item"><a href="">Visit dictionary site!</a></div>
+    </div>
+</footer>
+<link rel="preload" as="script" href="<%= data.jsLoc%>" onload="this.onload =null;this.rel='preload'">
+<script src="<%= data.jsLoc%>"></script>
+
+</html>
